@@ -2,10 +2,10 @@
 Created 6/14/19
 
 ### Project Title
-Replace the Project Title
+Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Compiles and filters bikeshare data from Chicago, New York City and Washington.
 
 ### Files used
 Include the files used
