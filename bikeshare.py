@@ -135,13 +135,13 @@ def trip_duration_stats(df):
     total_hr = int((total%86400)/3600)
     total_min = int(((total%86400)%3600)/60)
     total_sec = ((total%86400)%3600)%60
-    print('The total travel time is:\n', total_days, 'days,',total_hr,'hours, ',total_min,'minutes and ',total_sec,'seconds\n')
+    print('The total travel time is:\n {} days, {} hours, {} minutes and {} seconds\n'.format(total_days, total_hr, total_min, total_sec))
 
     # display mean travel time
     mean = df['Trip Duration'].mean()
     mean_min = int(mean/60)
     mean_sec = mean%60
-    print('The mean travel time is ', mean_min,'minutes and ',mean_sec,'seconds .\n')
+    print('The mean travel time is {} minutes and {} seconds .\n'.format(mean_min, mean_sec))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
