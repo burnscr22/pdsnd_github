@@ -24,7 +24,7 @@ def get_filters():
     while True:
         try:
             global city
-            city = input('Would you like to see data from Chicago, New York City or Washington?\n')
+            city = input('Would you like to see data from Chicago, New York City or Washington? Choose one.\n')
         except:
             print('That is not a valid entry.')
         if city.lower() in CITY_DATA:
@@ -33,7 +33,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         try:
-            month = input('Would you like to see data from January, February, March, Arpil, May, June or "all" data.\n')
+            month = input('Would you like to see data from January, February, March, Arpil, May, June or "all" data? Choose one.\n')
         except:
             print('That is not a valid entry.')
         if month.lower() in months:
