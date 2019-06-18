@@ -170,7 +170,7 @@ def user_stats(df):
         earliest = int(df['Birth Year'].min())
         most_recent = int(df['Birth Year'].max())
         most_common = int(df['Birth Year'].mode()[0])
-        print('The earliest, most recent, and most common year of birth are', earliest, ',', most_recent, ',', '&', most_common, 'respectively.')
+        print('The earliest, most recent, and most common year of birth are {}, {} & {} respectively.'.format(earliest, most_recent, most_common))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
